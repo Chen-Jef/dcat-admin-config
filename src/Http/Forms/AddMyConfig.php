@@ -8,7 +8,6 @@ use Dcat\Admin\Jef\DcatConfig\Models\MyConfig;
 use Dcat\Admin\Widgets\Form;
 use Dcat\Admin\Traits\LazyWidget;
 use Dcat\Admin\Contracts\LazyRenderable;
-use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
 
 class AddMyConfig extends Form implements LazyRenderable

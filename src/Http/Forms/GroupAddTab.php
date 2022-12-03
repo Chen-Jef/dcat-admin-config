@@ -84,7 +84,6 @@ class GroupAddTab extends Form implements LazyRenderable
             DB::commit();
         }catch (\Exception $exception){
             DB::rollBack();
-            var_dump($exception->getMessage());
             return $this->response()->error(DcatConfigServiceProvider::trans('my-config.response.error'));
         }
         return $this->response()->success(DcatConfigServiceProvider::trans('my-config.response.success'))->refresh();
@@ -92,8 +91,6 @@ class GroupAddTab extends Form implements LazyRenderable
 
     public function form()
     {
-
-        // 第一列占据1/2的页面宽度
         $this->table('jef-config-group','配置分组',function (NestedForm $table){
             $table->hidden('id');
             $table->text('key');
