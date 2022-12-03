@@ -31,3 +31,5 @@ MyConfig::getConfig($config_name);
 //获取指定分组中的所有配置详情
 MyConfig::getGroupConfigs($config_group_key);
 ```
+
+#### 下载打包文件（zip格式）
