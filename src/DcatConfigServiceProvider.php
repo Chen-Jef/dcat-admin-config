@@ -7,7 +7,7 @@ use Dcat\Admin\Extend\ServiceProvider;
 class DcatConfigServiceProvider extends ServiceProvider
 {
     // 定义菜单
-    protected array $menu = [
+    protected $menu = [
         [
             'title' => '自定义配置',
             'uri'   => 'jef/dcat-config',
